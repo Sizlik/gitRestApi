@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+<div class="col-sm-8">
+    <form action="/git_details" method="post">
+        <div class="mb-3">
+            <input type="submit" name="git_details" class="btn btn-primary" value="git_details">
+        </div>
+    </form>
+    <form action="/git_pulls" method="post">
+        <div class="mb-3">
+            <input type="submit" name="git_pulls" class="btn btn-primary" value="git_pulls">
+        </div>
+    </form>
+    <form action="/git_unused_pulls" method="post">
+        <div class="mb-3">
+            <input type="submit" name="git_unused_pulls" class="btn btn-primary" value="git_unused_pulls">
+        </div>
+    </form>
+    <form action="/git_issues" method="post">
+        <div class="mb-3">
+            <input type="submit" name="git_issues" class="btn btn-primary" value="git_issues">
+        </div>
+    </form>
+    <form action="/git_forks" method="post">
+        <div class="mb-3">
+            <input type="submit" name="git_forks" class="btn btn-primary" value="git_forks">
+        </div>
+    </form>
+
+    <form action="/logout" method="post">
+        <div class="mb-3">
+            <input type="submit" name="logout" class="btn btn-danger" value="logout">
+        </div>
+    </form>
+</div>
+<div class="col-sm-8">
+    <form action="/not_auth" method="post">
+        <div class="mb-3">
+            <label for="owner_" class="form-label">Owner</label>
+            <input type="text" name="owner" class="form-control" id="owner_" placeholder="github username" required>
+        </div>
+        <div class="mb-3">
+            <label for="repo_" class="form-label">Repository</label>
+            <input type="text" name="repo" class="form-control" id="repo_" placeholder="github repo name" required>
+        </div>
+        <div class="mb-3">
+            <input type="submit" name="btn" class="btn btn-primary" value="git_details">
+            <input type="submit" name="btn" class="btn btn-primary" value="git_pulls">
+            <input type="submit" name="btn" class="btn btn-primary" value="git_unused_pulls">
+            <input type="submit" name="btn" class="btn btn-primary" value="git_issues">
+            <input type="submit" name="btn" class="btn btn-primary" value="git_forks">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
